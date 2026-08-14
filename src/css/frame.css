@@ -1,0 +1,11 @@
+/* Framework css */
+.container-page {
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.flex-position {
+    display:flex;
+}
+/**/

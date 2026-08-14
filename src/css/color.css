@@ -1,0 +1,27 @@
+/* Cores da página */
+:root {
+    --color-one:#F3EEE4;
+    --color-two:#DD5400;
+    --color-tree:#110C08;
+    --color-four:#110c0898;
+    --color-five:#362B24;
+    --color-six:#ca5b02;
+    --color-seven:#ac3910;
+    --color-eight:#16100C;
+    --color-nine:#1F1611;
+    --color-ten:#ADA396;
+    --color-eleven:#ff6600;
+    --color-twelve:rgba(255, 102, 0, 0.3);
+    --color-thirteen:rgba(255, 102, 0, 0.2);
+    --color-fourteen:rgba(255, 102, 0, 0.1);
+    --color-fiveteen:#110C08;
+    --color-sixteen:#362B24;
+    --color-seventeen:#eb2d2d;
+    --color-eighteen:#28a745;
+    --color-nineteen:#080604;
+    --color-twenty:rgba(0, 0, 0, 0.212);
+    --color-twenty-one:#ada3962c;
+    --color-twenty-two:#2b2622;
+    
+}
+/**/

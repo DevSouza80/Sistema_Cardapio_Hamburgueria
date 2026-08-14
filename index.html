@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="icon" href="./src/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/resete.css" />
+    <link rel="stylesheet" href="./src/css/frame.css" />
+    <link rel="stylesheet" href="./src/css/media.css" />
+    <title>Texas Hamburgueria| </title>
+</head>
+
+<body>
+   
+    <section style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('./src/img/hero-bg.png')"
+        class="check-top" >
+        <header class="menu-upper">
+            <div class="flex-position">
+                <div class="logo-catalog">
+                    <a href="#" target="_blank">
+                        <div class="img-catalog">
+                            <img src="./src/img/logo.png" alt="logo" />
+                        </div>
+                    </a>
+                    <div class="title-catalog">
+                        <h2>OESTE Hamburgueria</h2>
+                        <h3>Escolha seu Burger</h3>
+                    </div>
+                </div>
+                <div class="wrapper-right">
+                    <div class="cart-catalog">
+                        <div class="number-cart" >
+                            <p id="cart-count">0</p>
+                        </div>
+                        <div class="customer-cart" id="cart-btn">
+                            <i class="bi bi-cart4"></i>
+                        </div>
+                    </div>
+                </div>
+
+        </header>
+        <div class="cart-menu" id="cart-modal">
+            <div class="flex-cart">
+                <div class="title-cart">
+                    <h2>Seu <span>Pedido</span></h2>
+                </div>
+                <div class="btn-close" id="close-modal-btn">
+                    <img src="./src/img/close.png" alt="close" />
+                </div>
+            </div>
+            <div class="cart-itens" id="cart-itens"></div>
+            <div class="cart-empty" id="cart-empty">
+                <div class="icon-empty">
+                    <i class="bi bi-bag-fill"></i>
+                </div>
+                <div class="text-empty">
+                    <p>Seu carrinho está vazio.</p>
+                </div>
+            </div>
+            <div class="content-cart">
+                <div class="cart-total">
+                    <p>Total: <span id="cart-total">0.00</span></p>
+                </div>
+                <div class="text-cart">
+                    <p>Endereço de entrega:</p>
+                </div>
+                <div class="input-cart">
+                    <input type="text" id="address" placeholder="Endereço e número da residência.">
+
+                </div>
+                <div class="alert-cart" >
+                    <p id="address-warn">Digite seu endereço completo!</p>
+                </div>
+                <div class="button-finish">
+                    <button class="btn-modal" id="checkout-btn">Finalizar Pedido</button>
+                </div>
+            </div>
+        </div>
+         
+        <div class="promo-special" id="promo-special">
+            <h3>Direto da chapa</h3>
+            <h1>Nosso <span>Cardápio</span></h1>
+            <p>Carne moída na hora, brasa de carvão e pão assado no
+                dia. Escolha o seu e a gente coloca no fogo.</p>
+
+            <div class="space-hours" id="space-hours">
+                <h3> <i class="bi bi-x-octagon-fill" id="icon-hours"></i> <span id="space-text">Fechado
+                        Agora</span></h3>
+            </div>
+        </div>
+    </section>
+    <section class="diferencials-single">
+        <div class="container-page">
+            <div class="flex-position">
+                <div class="box-max">
+                    <div class="img-delivery">
+                        <img src="./src/img/icon-motor.png" alt="icon-moto"/>
+                    </div>
+                    <div class="title-delivery">
+                        <h2>Delivery Rápido</h2>
+                        <p>Entrega rápida em até 35 minutos em toda a região.</p>
+                    </div>
+                </div>
+                <div class="border-side"></div>
+                <div class="box-max">
+                    <div class="img-delivery">
+                        <img src="./src/img/burger.png" alt="burguer"/>
+                    </div>
+                    <div class="title-delivery">
+                        <h2>Receita Artesanal</h2>
+                        <p>Blend de fraldinha e acém, defumado no carvão.</p>
+                    </div>
+                </div>
+                 <div class="border-side"></div>
+                  <div class="box-max">
+                    <div class="img-delivery">
+                        <img src="./src/img/fire.png" alt="fire"/>
+                    </div>
+                    <div class="title-delivery">
+                        <h2>Ambiente Aconchegante</h2>
+                        <p>Ambiente rústico e confortável para grupos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="menu-wraper" id="menu">
+        <section class="iron-grill">
+            <div class="container-page">
+                <div class="wrestem-rustic">
+                    <h2>Hambúrgueres <i class="bi bi-fire"></i></h2>
+                </div>
+                <div class="grid-menu">
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto1.png');" class="img-product">
+                            <div class="stil-text">
+                                <h3>Promoção </h3>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Classic Ranch</h2>
+                                <div class="price-box">
+                                    <p>R$32</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Blend 160g, cheddar maturado, picles
+                                    caseiro, alface e molho da casa.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button 
+                                     data-name="Classic Ranch"
+                                     data-price="32"
+                                     class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto2.png');" class="img-product">
+                            <div class="stil-text">
+                                <h3>mais pedido </h3>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Smokey Bacon</h2>
+                                <div class="price-box">
+                                    <p>R$41</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Blend 180g, bacon, onion
+                                    rings crocantes e barbecue artesanal.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Smokey Bacon"
+                                    data-price="41"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto3.png');" class="img-product">
+                            <div class="stil-text">
+                                <h3>mais pedido </h3>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Brasa Oeste</h2>
+                                <div class="price-box">
+                                    <p>R$38</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Blend 160g, jalapeño, pepper jack,
+                                    tomate assado e maionese picante.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Brasa Oeste"
+                                    data-price="38"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto4.png');" class="img-product">
+                            <div class="stil-text">
+                                <h3>para dividir</h3>
+                                <i class="bi bi-fire"></i>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Longhorn Triplo</h2>
+                                <div class="price-box">
+                                    <p>R$50</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Três blends 150g, brisket desfiado e
+                                    cascata de cheddar cremoso.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Longhorn Triplo"
+                                    data-price="50"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto5.png');" class="img-product">
+                            <div class="stil-text">
+                                <h3>Promoção </h3>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Classic Oeste</h2>
+                                <div class="price-box">
+                                    <p>R$25</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Blend 180g, cheddar maturado, alface
+                                    crocante e molho da casa.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Classic Oeste"
+                                    data-price="25"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto6.png');" class="img-product">
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Bacon Ranch</h2>
+                                <div class="price-box">
+                                    <p>R$30</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Bacon, anéis de cebola dourados,
+                                    cheddar e molho ranch picante.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Bacon Ranch"
+                                    data-price="30"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto7.png');" class="img-product">
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Brisket Stack</h2>
+                                <div class="price-box">
+                                    <p>R$55</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Brisket desfiado 12h no defumador, queijo
+                                    prato e barbecue artesanal.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Brisket Stack"
+                                    data-price="55"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto8.png');" class="img-product">
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>BBQ Pork</h2>
+                                <div class="price-box">
+                                    <p>R$36</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Pulled pork desfiado, anéis
+                                    crocantes de cebola e barbecue.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="BBQ Pork"
+                                    data-price="36"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto9.png');" class="img-product">
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Jalapeño Chipotle</h2>
+                                <div class="price-box">
+                                    <p>R$33</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Pepper jack, jalapeño, pimenta chipotle
+                                    e maionese apimentada.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Jalapeño Chipotle"
+                                    data-price="33"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto10.png');" class="img-product">
+                            <div class="stil-text">
+                                <h3>mais pedido </h3>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Triple Stack</h2>
+                                <div class="price-box">
+                                    <p>R$54</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Três hambúrgueres de 120g, muito cheddar,
+                                    baco e triplo pão tostado.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Triple Stack"
+                                    data-price="54"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto11.png');" class="img-product">
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Double Smash</h2>
+                                <div class="price-box">
+                                    <p>R$34</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Cogumelos salteados na manteiga, queijo
+                                    suíço e maionese de alho.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Double Smash"
+                                    data-price="34"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product">
+                        <div style="background-image:url('./src/img/produto12.png');" class="img-product">
+                        </div>
+                        <div class="content-box">
+                            <div class="fix-title">
+                                <h2>Cowboy</h2>
+                                <div class="price-box">
+                                    <p>R$28</p>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Blend 180g, ovo frito, bacon,
+                                    cheddar, anel de cebola e molho barbecue.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="#">
+                                    <button
+                                    data-name="Cowboy"
+                                    data-price="28"
+                                    class="add-to-cart-btn"
+                                    ><i class="bi bi-plus"></i> adicionar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fire-wrapper">
+                    <div class="wrestem-rustic">
+                        <h2>Combos <i class="bi bi-flag-fill"></i></h2>
+                    </div>
+                    <div class="container-page">
+
+                        <div class="grid-combos">
+                            <div class="box-product">
+                                <div style="background-image:url('./src/img/combo1.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Combo Clássico</h2>
+                                        <div class="price-box">
+                                            <p>R$62</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Um burger caprichado, acompanhado de batata frita.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Combo Clássico"
+                                            data-price="62"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-product">
+                                <div style="background-image:url('./src/img/produto13.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Combo Brasa </h2>
+                                        <div class="price-box">
+                                            <p>R$89</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Burger suculento, batatas crocantes e uma Coca-Cola gelada.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Combo Brasa"
+                                            data-price="89"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-product">
+                                <div style="background-image:url('./src/img/combo3.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Combo Big </h2>
+                                        <div class="price-box">
+                                            <p>R$120</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Burger caprichado, duas porções de batatas e um Guaraná Antarctica.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Combo Big"
+                                            data-price="120"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fire-wrapper">
+                    <div class="wrestem-rustic">
+                        <h2>Bebidas <i class="bi bi-cup-straw"></i></h2>
+                    </div>
+                    <div class="container-page">
+
+                        <div class="grid-combos">
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida1.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Coca Cola 500ml</h2>
+                                        <div class="price-box">
+                                            <p>R$5</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Coca Cola 500ml.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Coca Cola 500ml"
+                                            data-price="5"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida3.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Guaraviton</h2>
+                                        <div class="price-box">
+                                            <p>R$5</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Guaraviton Giseng 500ml.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Guaraviton"
+                                            data-price="5"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida2.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2> Antarctica 500ml</h2>
+                                        <div class="price-box">
+                                            <p>R$5</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Guaraná Antarctica 500ml.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Antarctica 500ml"
+                                            data-price="5"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida4.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Coca Cola 2L</h2>
+                                        <div class="price-box">
+                                            <p>R$12</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Coca Cola 2L.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Coca Cola 2L"
+                                            data-price="12"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida5.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2> Antarctica 2L</h2>
+                                        <div class="price-box">
+                                            <p>R$8</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Guaraná Antarctica 1L.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Antarctica 2L"
+                                            data-price="8"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida7.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Antarctica Lata</h2>
+                                        <div class="price-box">
+                                            <p>R$4</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Antarctica Lata.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Antarctica Lata"
+                                            data-price="4"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida8.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Fanta Uva 1,5L</h2>
+                                        <div class="price-box">
+                                            <p>R$6</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Fanta Uva 1,5L.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Fanta Uva 1,5L"
+                                            data-price="6"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida9.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Fanta Uva Lata</h2>
+                                        <div class="price-box">
+                                            <p>R$4</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Fanta Uva Lata.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Fanta Uva Lata"
+                                            data-price="4"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida6.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Coca Cola Lata</h2>
+                                        <div class="price-box">
+                                            <p>R$4</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Coca Cola Lata.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Coca Cola Lata"
+                                            data-price="4"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida10.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Fanta Laranja 1,5L</h2>
+                                        <div class="price-box">
+                                            <p>R$6</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Fanta Laranja 1,5L.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Fanta Laranja 1,5"
+                                            data-price="6"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida11.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Fanta Laranja Lata</h2>
+                                        <div class="price-box">
+                                            <p>R$4</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Fanta Laranja Lata.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Fanta Laranja Lata"
+                                            data-price="4"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida12.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Guaraviton Açaí</h2>
+                                        <div class="price-box">
+                                            <p>R$5</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Guaraviton Açaí 500ml.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Guaraviton Açaí"
+                                            data-price="5"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida13.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Suco Del Valle</h2>
+                                        <div class="price-box">
+                                            <p>R$6</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Suco Del Valle 450ml.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Suco Del Valle"
+                                            data-price="6"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida14.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Del Valle Lata</h2>
+                                        <div class="price-box">
+                                            <p>R$4</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Suco Del Valle Lata.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Del Valle Lata"
+                                            data-price="4"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/bebida15.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Del Valle 1L</h2>
+                                        <div class="price-box">
+                                            <p>R$6</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Suco Del Valle 1L.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Del Valle 1L"
+                                            data-price="6"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fire-wrapper">
+                    <div class="wrestem-rustic">
+                        <h2>Sobremesas <i class="bi bi-cake2-fill"></i></h2>
+                    </div>
+                    <div class="container-page">
+
+                        <div class="grid-combos">
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/sobremesa2.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Torta Kit Kat</h2>
+                                        <div class="price-box">
+                                            <p>R$18</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Torta de Kit Kat com recheio.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Torta Kit Kat"
+                                            data-price="18"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/sobremesa3.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Torta de Morango</h2>
+                                        <div class="price-box">
+                                            <p>R$18</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Torta de Morango com recheio.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Torta de Morango"
+                                            data-price="18"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-drink">
+                                <div style="background-image:url('./src/img/sobremesa1.png');" class="img-product">
+                                </div>
+                                <div class="content-box">
+                                    <div class="fix-title">
+                                        <h2>Brownie na Chapa</h2>
+                                        <div class="price-box">
+                                            <p>R$15</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Brownie, sorvete de baunilha e calda.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#">
+                                            <button
+                                            data-name="Brownie na Chapa"
+                                            data-price="15"
+                                            class="add-to-cart-btn"
+                                            ><i class="bi bi-plus"></i> adicionar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container-page">
+            <div class="flex-position">
+                <div class="flux-footer">
+                    <div class="logo-footer">
+                        <div class="marker-logo">
+                            <img src="./src/img/logo.png" alt="logo" />
+                        </div>
+                        <div class="title-logo">
+                            <h2>OESTE <span>Hamburgueria</span></h2>
+                        </div>
+
+                    </div>
+                    <div class="text-logo">
+                        <p>Hambúrguer artesanal no carvão, do jeito texano.
+                            Feito com carne fresca todos os dias.</p>
+                    </div>
+                </div>
+                <div class="stand-info">
+                    <h2>Contato</h2>
+                    <div class="text-stand">
+                        <p>Rua das Brasas, 1200 — São Paulo/SP</p>
+                        <p>(11) 3333-4444</p>
+                        <p>Ter a dom, 18h – 00h</p>
+                    </div>
+                    <div class="icon-footer">
+                        <div class="icon-social">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <div class="icon-social">
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                        <div class="icon-social">
+                            <i class="bi bi-chat"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-footer">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98288.2482193119!2d-46.61171584732776!3d-23.723872779655355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1786659561072!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+   
+
+    <div class="term-footer">
+        <div class="desk-footer">
+            <p>© 2026 OESTE Hamburgueria. Todos os direitos reservados.</p>
+        </div>
+        <div class="author-footer">
+            <p>Desenvolvido por <span>Pedro Souza</span></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   
+    <script src="./src/js/cardapio.js"></script>
+</body>
+
+</html>
