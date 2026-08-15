@@ -782,5 +782,57 @@ footer .flex-position {
     border-radius: 10px;
 }
 
+.whatsapp-float {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    cursor: pointer;
+    animation: pulse 1.6s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.16); }
+    100% { transform: scale(1); }
+}
+
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 80px;
+    background:var(  --color-nineteen);
+    color:var(--color-two);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family:var(--font-inter);
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transform: translateY(0);
+    transition: 0.3s ease;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+    transform: translateY(-5px);
+}
 /**/
 
